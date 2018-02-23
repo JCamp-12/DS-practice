@@ -6,8 +6,12 @@
 */
 class Stack {
   constructor() {
-    test commit
+    this.storage = [];
   }
 }
+
+const pancakeStack = new Stack();
+pancake.stack('Japanese Fluffy Pancakes');
+
 
 module.exports = Stack;
