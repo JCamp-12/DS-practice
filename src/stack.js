@@ -5,7 +5,9 @@
   4. Add a `pop` method that removes the most recently-added item to the stack
 */
 class Stack {
-
+  constructor() {
+    test commit
+  }
 }
 
 module.exports = Stack;
