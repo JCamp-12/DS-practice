@@ -8,11 +8,14 @@ const Stack = require('./Stack');
 */
 class Queue {
   constructor() {
-    this.storageOne = new Stack();
-    this.storageTwo = new Stack();
+    this.storageIn = new Stack();
+    this.storageOut = new Stack();
   }
   get size() {
-    return this.storageOne.size + this.storageTwo.size;
+    return this.storageIn.size + this.storageOut.size;
+  }
+  enqueue(value) {
+    this.storageIn.push(value);
   }
 }
 
