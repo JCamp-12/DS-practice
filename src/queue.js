@@ -18,12 +18,13 @@ class Queue {
     this.storageIn.push(value);
   }
   dequeue() {
-    if (this.storageOut.length === 0) {
-      while (this.storageOut.length > 0) {
+    if (this.storageOut.size === 0) {
+      while (this.storageIn.size > 0) {
         this.storageOut.push(this.storageIn.pop());
       }
     }
     // return this.storageOut.pop();
+    return this.size ? this.storageOut.pop() : undefined;
   }
 }
 
