@@ -12,7 +12,7 @@ class Queue {
     this.storageTwo = new Stack();
   }
   get size() {
-    return this.storageOne + this.storageTwo;
+    return this.storageOne.size + this.storageTwo.size;
   }
 }
 
