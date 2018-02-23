@@ -11,6 +11,9 @@ class Stack {
   get size(){
     return this.storage.length;
   }
+  push(value){
+    this.storage;
+  }
 }
 
 const pancakeStack = new Stack();
