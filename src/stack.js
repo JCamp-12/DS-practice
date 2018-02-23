@@ -8,16 +8,16 @@ class Stack {
   constructor() {
     this.storage = [];
   }
-  get size(){
+  get size() {
     return this.storage.length;
   }
-  push(value){
+  push(value) {
     this.storage.push(value);
   }
-}
-
-const pancakeStack = new Stack();
-pancake.stack('Japanese Fluffy Pancakes');
+  pop() {
+    return this.storage.pop();
+  }
+  }
 
 
 module.exports = Stack;
