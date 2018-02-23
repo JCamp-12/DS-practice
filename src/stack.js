@@ -12,7 +12,7 @@ class Stack {
     return this.storage.length;
   }
   push(value){
-    this.storage;
+    this.storage.push(value);
   }
 }
 
