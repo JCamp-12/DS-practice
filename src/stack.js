@@ -8,6 +8,9 @@ class Stack {
   constructor() {
     this.storage = [];
   }
+  get size(){
+    return this.storage.length;
+  }
 }
 
 const pancakeStack = new Stack();
