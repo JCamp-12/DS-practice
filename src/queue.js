@@ -1,3 +1,5 @@
+const Stack = require('./Stack');
+
 /*
   1. Add a constructor with a storage structure; there are multiple options you could use for this
   2. Add a size getter that returns the number of items the queue is storing
@@ -8,6 +10,9 @@ class Queue {
   constructor() {
     this.storageOne = new Stack();
     this.storageTwo = new Stack();
+  }
+  get size() {
+    return this.storageOne + this.storageTwo;
   }
 }
 
