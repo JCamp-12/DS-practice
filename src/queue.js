@@ -17,6 +17,14 @@ class Queue {
   enqueue(value) {
     this.storageIn.push(value);
   }
+  dequeue() {
+    if (this.storageOut.length === 0) {
+      while (this.storageOut.length > 0) {
+        this.storageOut.push(this.storageIn.pop());
+      }
+    }
+    // return this.storageOut.pop();
+  }
 }
 
 module.exports = Queue;
